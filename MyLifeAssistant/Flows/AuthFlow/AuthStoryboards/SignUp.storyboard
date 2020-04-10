@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Dpc-Ig-u58">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Leu-xa-T3L" customClass="SignUpViewController" customModule="MyLifeAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCG-WJ-wcX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hS5-Ia-vei">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hS5-Ia-vei" secondAttribute="bottom" id="3kq-qS-Uc1"/>
+                            <constraint firstItem="hS5-Ia-vei" firstAttribute="trailing" secondItem="n7M-hr-XXw" secondAttribute="trailing" id="F2T-kl-zVt"/>
+                            <constraint firstItem="hS5-Ia-vei" firstAttribute="top" secondItem="KCG-WJ-wcX" secondAttribute="top" id="Mn8-Q6-zbN"/>
+                            <constraint firstItem="hS5-Ia-vei" firstAttribute="leading" secondItem="n7M-hr-XXw" secondAttribute="leading" id="Sco-wp-zQn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n7M-hr-XXw"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="hS5-Ia-vei" id="Mfg-sb-fXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42e-IH-5Yq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="11"/>
+        </scene>
+    </scenes>
+</document>

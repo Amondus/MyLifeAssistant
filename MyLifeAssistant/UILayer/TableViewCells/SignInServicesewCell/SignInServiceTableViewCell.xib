@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SignInServiceTableViewCell" rowHeight="80" id="953-dL-W4l" customClass="SignInServiceTableViewCell" customModule="MyLifeAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="953-dL-W4l" id="l77-t7-RTd">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTJ-X9-VPI">
+                        <rect key="frame" x="54" y="15" width="306" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-6i-bkU">
+                                <rect key="frame" x="16" y="7" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Edf-9P-jUH"/>
+                                    <constraint firstAttribute="height" constant="36" id="J3s-dd-bF7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="27U-ma-Lwp">
+                                <rect key="frame" x="68" y="7" width="230" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="27U-ma-Lwp" secondAttribute="bottom" constant="7" id="96q-D3-T6X"/>
+                            <constraint firstAttribute="bottom" secondItem="OaH-6i-bkU" secondAttribute="bottom" constant="7" id="Hh1-vW-hrU"/>
+                            <constraint firstItem="OaH-6i-bkU" firstAttribute="top" secondItem="vTJ-X9-VPI" secondAttribute="top" constant="7" id="NkM-eS-ORh"/>
+                            <constraint firstItem="OaH-6i-bkU" firstAttribute="leading" secondItem="vTJ-X9-VPI" secondAttribute="leading" constant="16" id="bAz-zY-p29"/>
+                            <constraint firstItem="27U-ma-Lwp" firstAttribute="top" secondItem="vTJ-X9-VPI" secondAttribute="top" constant="7" id="bpd-vv-BpS"/>
+                            <constraint firstItem="27U-ma-Lwp" firstAttribute="leading" secondItem="OaH-6i-bkU" secondAttribute="trailing" constant="16" id="mIS-JZ-Ap6"/>
+                            <constraint firstAttribute="trailing" secondItem="27U-ma-Lwp" secondAttribute="trailing" constant="8" id="mac-C2-BBd"/>
+                            <constraint firstAttribute="height" constant="50" id="uHv-gg-3KZ"/>
+                            <constraint firstItem="27U-ma-Lwp" firstAttribute="height" secondItem="OaH-6i-bkU" secondAttribute="height" id="zkY-zH-lNk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vTJ-X9-VPI" firstAttribute="leading" secondItem="l77-t7-RTd" secondAttribute="leading" constant="54" id="E0h-7N-jJO"/>
+                    <constraint firstItem="vTJ-X9-VPI" firstAttribute="top" secondItem="l77-t7-RTd" secondAttribute="top" constant="15" id="Kpx-0P-l4d"/>
+                    <constraint firstAttribute="trailing" secondItem="vTJ-X9-VPI" secondAttribute="trailing" constant="54" id="Qdx-8Y-xc5"/>
+                    <constraint firstAttribute="bottom" secondItem="vTJ-X9-VPI" secondAttribute="bottom" constant="15" id="XM4-Cc-Nwi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonView" destination="vTJ-X9-VPI" id="TBc-Ts-UkD"/>
+                <outlet property="serviceImage" destination="OaH-6i-bkU" id="xfG-t2-vKD"/>
+                <outlet property="serviceLabel" destination="27U-ma-Lwp" id="LcY-ff-giO"/>
+            </connections>
+            <point key="canvasLocation" x="200.00000000000003" y="219.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="googleLogo" width="341" height="341"/>
+    </resources>
+</document>

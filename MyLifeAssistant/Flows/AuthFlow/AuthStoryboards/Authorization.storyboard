@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authorization View Controller-->
+        <scene sceneID="m3O-GM-Dg2">
+            <objects>
+                <viewController storyboardIdentifier="AuthorizationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VBO-rZ-qCa" customClass="AuthorizationViewController" customModule="MyLifeAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMQ-rW-Brv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plantImage" translatesAutoresizingMaskIntoConstraints="NO" id="Vt6-xp-q0B">
+                                <rect key="frame" x="0.0" y="204" width="414" height="413"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dex-oo-22V">
+                                <rect key="frame" x="54" y="747" width="306" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NwZ-oX-Zp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <state key="normal" title="Регистрация">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="VBO-rZ-qCa" eventType="touchUpInside" id="VT2-GI-Eff"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control your. Allergy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="MJM-cM-2bd">
+                                <rect key="frame" x="54" y="94" width="306" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yo1-v2-9Rp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8w-Ge-uus">
+                                <rect key="frame" x="54" y="666" width="306" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.81568627450980391" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eTx-ZB-53W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <state key="normal" title="Вход">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInTapped:" destination="VBO-rZ-qCa" eventType="touchUpInside" id="nA7-8r-p1o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TIW-V8-V4N" firstAttribute="trailing" secondItem="u8w-Ge-uus" secondAttribute="trailing" constant="54" id="04m-m1-xb3"/>
+                            <constraint firstItem="Vt6-xp-q0B" firstAttribute="top" secondItem="MJM-cM-2bd" secondAttribute="bottom" constant="60" id="0bm-ne-ZQU"/>
+                            <constraint firstItem="u8w-Ge-uus" firstAttribute="leading" secondItem="TIW-V8-V4N" secondAttribute="leading" constant="54" id="1sZ-0j-HCj"/>
+                            <constraint firstItem="dex-oo-22V" firstAttribute="leading" secondItem="u8w-Ge-uus" secondAttribute="leading" id="2nq-He-sCB"/>
+                            <constraint firstItem="TIW-V8-V4N" firstAttribute="trailing" secondItem="MJM-cM-2bd" secondAttribute="trailing" constant="54" id="7vw-aP-7zq"/>
+                            <constraint firstItem="Vt6-xp-q0B" firstAttribute="trailing" secondItem="TIW-V8-V4N" secondAttribute="trailing" id="K15-RL-QoM"/>
+                            <constraint firstItem="MJM-cM-2bd" firstAttribute="leading" secondItem="TIW-V8-V4N" secondAttribute="leading" constant="54" id="Ks1-XC-NLJ"/>
+                            <constraint firstItem="TIW-V8-V4N" firstAttribute="bottom" secondItem="dex-oo-22V" secondAttribute="bottom" constant="65" id="Umm-j7-Alh"/>
+                            <constraint firstItem="dex-oo-22V" firstAttribute="trailing" secondItem="u8w-Ge-uus" secondAttribute="trailing" id="VuX-g4-aoK"/>
+                            <constraint firstItem="u8w-Ge-uus" firstAttribute="top" secondItem="Vt6-xp-q0B" secondAttribute="bottom" constant="49" id="bIg-Ba-RA3"/>
+                            <constraint firstItem="Vt6-xp-q0B" firstAttribute="leading" secondItem="TIW-V8-V4N" secondAttribute="leading" id="nFj-z2-FUr"/>
+                            <constraint firstItem="dex-oo-22V" firstAttribute="top" secondItem="u8w-Ge-uus" secondAttribute="bottom" constant="31" id="tW0-vN-Ky4"/>
+                            <constraint firstItem="MJM-cM-2bd" firstAttribute="top" secondItem="TIW-V8-V4N" secondAttribute="top" constant="50" id="y11-KT-125"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TIW-V8-V4N"/>
+                    </view>
+                    <connections>
+                        <outlet property="allergyLabel" destination="MJM-cM-2bd" id="SnV-5P-y5u"/>
+                        <outlet property="gradientButton" destination="u8w-Ge-uus" id="A3f-Od-3F3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lrk-ye-e8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="-44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plantImage" width="375" height="400"/>
+    </resources>
+</document>
