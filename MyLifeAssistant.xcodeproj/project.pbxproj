@@ -22,14 +22,16 @@
 		7F1088A92426CE3800BAAABF /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1088A82426CE3800BAAABF /* CoordinatorFactory.swift */; };
 		7F1088AB2426CE5400BAAABF /* CoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1088AA2426CE5400BAAABF /* CoordinatorFactoryImp.swift */; };
 		7F1088AC2426D78600BAAABF /* AuthFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96FC22426CA96001020FC /* AuthFlowFactory.swift */; };
+		7F12884E24420FF400EA05FF /* ForgotPasswordTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12884724420FF300EA05FF /* ForgotPasswordTableViewCellDelegate.swift */; };
+		7F12884F24420FF400EA05FF /* ForgotPasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12884824420FF300EA05FF /* ForgotPasswordTableViewCell.swift */; };
+		7F12885024420FF400EA05FF /* ForgotPasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F12884924420FF300EA05FF /* ForgotPasswordTableViewCell.xib */; };
+		7F12885124420FF400EA05FF /* UnderlineTextTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12884B24420FF400EA05FF /* UnderlineTextTableViewCellDelegate.swift */; };
+		7F12885224420FF400EA05FF /* UnderlineTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12884C24420FF400EA05FF /* UnderlineTextTableViewCell.swift */; };
+		7F12885324420FF400EA05FF /* UnderlineTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F12884D24420FF400EA05FF /* UnderlineTextTableViewCell.xib */; };
 		7F238B3424411E9500EA55D7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F238B3324411E9500EA55D7 /* OnboardingView.swift */; };
 		7F238B3624411F5C00EA55D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F238B3524411F5C00EA55D7 /* BaseView.swift */; };
 		7F238B3824411F9B00EA55D7 /* NewsFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F238B3724411F9B00EA55D7 /* NewsFlowCoordinator.swift */; };
 		7F37BE60243E493A00CE1EF5 /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37BE5F243E493A00CE1EF5 /* AlertPresentable.swift */; };
-		7F37BE6324410F0200CE1EF5 /* ForgotPasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37BE6124410F0200CE1EF5 /* ForgotPasswordTableViewCell.swift */; };
-		7F37BE6424410F0200CE1EF5 /* ForgotPasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F37BE6224410F0200CE1EF5 /* ForgotPasswordTableViewCell.xib */; };
-		7F37BE6624410F1800CE1EF5 /* ForgotPasswordTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37BE6524410F1800CE1EF5 /* ForgotPasswordTableViewCellDelegate.swift */; };
-		7F3E3B0D24376F9200E8AA75 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E3B0C24376F9200E8AA75 /* UIButtonExtensions.swift */; };
 		7F3E3B1A243A4C3D00E8AA75 /* GradientButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E3B18243A4C3D00E8AA75 /* GradientButtonTableViewCell.swift */; };
 		7F3E3B1B243A4C3D00E8AA75 /* GradientButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3E3B19243A4C3D00E8AA75 /* GradientButtonTableViewCell.xib */; };
 		7F3E3B1E243A4E4200E8AA75 /* GradientButtonTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E3B1D243A4E4200E8AA75 /* GradientButtonTableViewCellDelegate.swift */; };
@@ -88,11 +90,8 @@
 		7F80B1932436778E000E4C94 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80B1922436778E000E4C94 /* SignUpViewController.swift */; };
 		7F80B196243678AD000E4C94 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80B195243678AD000E4C94 /* ForgotPasswordViewController.swift */; };
 		7F80B198243678D4000E4C94 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80B197243678D4000E4C94 /* ForgotPasswordView.swift */; };
-		7F80B19F24368F58000E4C94 /* UnderlineTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80B19D24368F58000E4C94 /* UnderlineTextTableViewCell.swift */; };
-		7F80B1A024368F58000E4C94 /* UnderlineTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F80B19E24368F58000E4C94 /* UnderlineTextTableViewCell.xib */; };
 		7FA04B16243C75D700DCAF9B /* TitleLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04B14243C75D700DCAF9B /* TitleLabelTableViewCell.swift */; };
 		7FA04B17243C75D700DCAF9B /* TitleLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA04B15243C75D700DCAF9B /* TitleLabelTableViewCell.xib */; };
-		7FA04B19243CE1AF00DCAF9B /* UnderlineTextTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04B18243CE1AF00DCAF9B /* UnderlineTextTableViewCellDelegate.swift */; };
 		7FA04B1D243CF49B00DCAF9B /* SignInServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04B1B243CF49B00DCAF9B /* SignInServiceTableViewCell.swift */; };
 		7FA04B1E243CF49B00DCAF9B /* SignInServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA04B1C243CF49B00DCAF9B /* SignInServiceTableViewCell.xib */; };
 		7FA04B20243CFE2A00DCAF9B /* SignInServiceTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04B1F243CFE2A00DCAF9B /* SignInServiceTableViewCellDelegate.swift */; };
@@ -105,7 +104,7 @@
 		7FF96F332426A0DB001020FC /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F312426A0DB001020FC /* RouterImp.swift */; };
 		7FF96F342426A0DB001020FC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F322426A0DB001020FC /* Router.swift */; };
 		7FF96F392426A136001020FC /* UIViewControllerUIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F362426A136001020FC /* UIViewControllerUIViewExtensions.swift */; };
-		7FF96F3A2426A136001020FC /* UIViewUIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F372426A136001020FC /* UIViewUIViewExtensions.swift */; };
+		7FF96F3A2426A136001020FC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F372426A136001020FC /* UIViewExtensions.swift */; };
 		7FF96F3B2426A136001020FC /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F382426A136001020FC /* NSObjectExtensions.swift */; };
 		7FF96F5F2426A247001020FC /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F5E2426A247001020FC /* BaseCoordinator.swift */; };
 		7FF96F982426C130001020FC /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF96F742426C130001020FC /* AuthFlowCoordinator.swift */; };
@@ -152,14 +151,16 @@
 		7F1088A62426CD0C00BAAABF /* OnboardingFlowFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowFactoryImp.swift; sourceTree = "<group>"; };
 		7F1088A82426CE3800BAAABF /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		7F1088AA2426CE5400BAAABF /* CoordinatorFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImp.swift; sourceTree = "<group>"; };
+		7F12884724420FF300EA05FF /* ForgotPasswordTableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		7F12884824420FF300EA05FF /* ForgotPasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewCell.swift; sourceTree = "<group>"; };
+		7F12884924420FF300EA05FF /* ForgotPasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordTableViewCell.xib; sourceTree = "<group>"; };
+		7F12884B24420FF400EA05FF /* UnderlineTextTableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		7F12884C24420FF400EA05FF /* UnderlineTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextTableViewCell.swift; sourceTree = "<group>"; };
+		7F12884D24420FF400EA05FF /* UnderlineTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderlineTextTableViewCell.xib; sourceTree = "<group>"; };
 		7F238B3324411E9500EA55D7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		7F238B3524411F5C00EA55D7 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		7F238B3724411F9B00EA55D7 /* NewsFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFlowCoordinator.swift; sourceTree = "<group>"; };
 		7F37BE5F243E493A00CE1EF5 /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
-		7F37BE6124410F0200CE1EF5 /* ForgotPasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewCell.swift; sourceTree = "<group>"; };
-		7F37BE6224410F0200CE1EF5 /* ForgotPasswordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordTableViewCell.xib; sourceTree = "<group>"; };
-		7F37BE6524410F1800CE1EF5 /* ForgotPasswordTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewCellDelegate.swift; sourceTree = "<group>"; };
-		7F3E3B0C24376F9200E8AA75 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		7F3E3B18243A4C3D00E8AA75 /* GradientButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonTableViewCell.swift; sourceTree = "<group>"; };
 		7F3E3B19243A4C3D00E8AA75 /* GradientButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientButtonTableViewCell.xib; sourceTree = "<group>"; };
 		7F3E3B1D243A4E4200E8AA75 /* GradientButtonTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonTableViewCellDelegate.swift; sourceTree = "<group>"; };
@@ -218,11 +219,8 @@
 		7F80B1922436778E000E4C94 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7F80B195243678AD000E4C94 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		7F80B197243678D4000E4C94 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		7F80B19D24368F58000E4C94 /* UnderlineTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UnderlineTextTableViewCell.swift; path = "../New Group/UnderlineTextTableViewCell.swift"; sourceTree = "<group>"; };
-		7F80B19E24368F58000E4C94 /* UnderlineTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnderlineTextTableViewCell.xib; sourceTree = "<group>"; };
 		7FA04B14243C75D700DCAF9B /* TitleLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelTableViewCell.swift; sourceTree = "<group>"; };
 		7FA04B15243C75D700DCAF9B /* TitleLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleLabelTableViewCell.xib; sourceTree = "<group>"; };
-		7FA04B18243CE1AF00DCAF9B /* UnderlineTextTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		7FA04B1B243CF49B00DCAF9B /* SignInServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServiceTableViewCell.swift; sourceTree = "<group>"; };
 		7FA04B1C243CF49B00DCAF9B /* SignInServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInServiceTableViewCell.xib; sourceTree = "<group>"; };
 		7FA04B1F243CFE2A00DCAF9B /* SignInServiceTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServiceTableViewCellDelegate.swift; sourceTree = "<group>"; };
@@ -235,7 +233,7 @@
 		7FF96F312426A0DB001020FC /* RouterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
 		7FF96F322426A0DB001020FC /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		7FF96F362426A136001020FC /* UIViewControllerUIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerUIViewExtensions.swift; sourceTree = "<group>"; };
-		7FF96F372426A136001020FC /* UIViewUIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUIViewExtensions.swift; sourceTree = "<group>"; };
+		7FF96F372426A136001020FC /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		7FF96F382426A136001020FC /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		7FF96F5E2426A247001020FC /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		7FF96F742426C130001020FC /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
@@ -415,36 +413,36 @@
 			path = AuthStoryboards;
 			sourceTree = "<group>";
 		};
-		7F37BE6824410F3000CE1EF5 /* ForgotPasswordTableViewCell */ = {
+		7F12884624420FF300EA05FF /* ForgotPasswordTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				7F37BE6524410F1800CE1EF5 /* ForgotPasswordTableViewCellDelegate.swift */,
-				7F37BE6124410F0200CE1EF5 /* ForgotPasswordTableViewCell.swift */,
-				7F37BE6224410F0200CE1EF5 /* ForgotPasswordTableViewCell.xib */,
+				7F12884724420FF300EA05FF /* ForgotPasswordTableViewCellDelegate.swift */,
+				7F12884824420FF300EA05FF /* ForgotPasswordTableViewCell.swift */,
+				7F12884924420FF300EA05FF /* ForgotPasswordTableViewCell.xib */,
 			);
-			name = ForgotPasswordTableViewCell;
+			path = ForgotPasswordTableViewCell;
+			sourceTree = "<group>";
+		};
+		7F12884A24420FF400EA05FF /* UnderlineTextTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F12884B24420FF400EA05FF /* UnderlineTextTableViewCellDelegate.swift */,
+				7F12884C24420FF400EA05FF /* UnderlineTextTableViewCell.swift */,
+				7F12884D24420FF400EA05FF /* UnderlineTextTableViewCell.xib */,
+			);
+			path = UnderlineTextTableViewCell;
 			sourceTree = "<group>";
 		};
 		7F3E3B10243A4B1B00E8AA75 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				7F12884624420FF300EA05FF /* ForgotPasswordTableViewCell */,
+				7F12884A24420FF400EA05FF /* UnderlineTextTableViewCell */,
 				7F3E3B1C243A4C4300E8AA75 /* GradientButtonTableViewCell */,
-				7FA04B1A243CF45800DCAF9B /* SignInServicesewCell */,
+				7FA04B1A243CF45800DCAF9B /* SignInServiceseTableViewCell */,
 				7FA04B13243C759900DCAF9B /* TitleLabelTableViewCell */,
-				7F3E3B12243A4B6500E8AA75 /* UnderlineTextTableViewCell */,
-				7F37BE6824410F3000CE1EF5 /* ForgotPasswordTableViewCell */,
 			);
 			path = TableViewCells;
-			sourceTree = "<group>";
-		};
-		7F3E3B12243A4B6500E8AA75 /* UnderlineTextTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				7FA04B18243CE1AF00DCAF9B /* UnderlineTextTableViewCellDelegate.swift */,
-				7F80B19D24368F58000E4C94 /* UnderlineTextTableViewCell.swift */,
-				7F80B19E24368F58000E4C94 /* UnderlineTextTableViewCell.xib */,
-			);
-			path = UnderlineTextTableViewCell;
 			sourceTree = "<group>";
 		};
 		7F3E3B1C243A4C4300E8AA75 /* GradientButtonTableViewCell */ = {
@@ -826,14 +824,14 @@
 			path = TitleLabelTableViewCell;
 			sourceTree = "<group>";
 		};
-		7FA04B1A243CF45800DCAF9B /* SignInServicesewCell */ = {
+		7FA04B1A243CF45800DCAF9B /* SignInServiceseTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				7FA04B1F243CFE2A00DCAF9B /* SignInServiceTableViewCellDelegate.swift */,
 				7FA04B1B243CF49B00DCAF9B /* SignInServiceTableViewCell.swift */,
 				7FA04B1C243CF49B00DCAF9B /* SignInServiceTableViewCell.xib */,
 			);
-			path = SignInServicesewCell;
+			path = SignInServiceseTableViewCell;
 			sourceTree = "<group>";
 		};
 		7FF96F2124269F84001020FC /* Application */ = {
@@ -873,10 +871,9 @@
 			isa = PBXGroup;
 			children = (
 				7FF96F362426A136001020FC /* UIViewControllerUIViewExtensions.swift */,
-				7FF96F372426A136001020FC /* UIViewUIViewExtensions.swift */,
+				7FF96F372426A136001020FC /* UIViewExtensions.swift */,
 				7FF96F382426A136001020FC /* NSObjectExtensions.swift */,
 				7F65ECCE2435016F00F9FE36 /* IBDesignableUIViewExtensions.swift */,
-				7F3E3B0C24376F9200E8AA75 /* UIButtonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1036,16 +1033,16 @@
 				7FA04B17243C75D700DCAF9B /* TitleLabelTableViewCell.xib in Resources */,
 				7F0D5D46240B16A10091E1AB /* Main.storyboard in Resources */,
 				7F3EE6802434DDA700B6013A /* GoogleService-Info.plist in Resources */,
-				7F37BE6424410F0200CE1EF5 /* ForgotPasswordTableViewCell.xib in Resources */,
 				7F0D5CDC240B0B510091E1AB /* LaunchScreen.storyboard in Resources */,
 				7F65ECCB2434EADB00F9FE36 /* SignUp.storyboard in Resources */,
+				7F12885324420FF400EA05FF /* UnderlineTextTableViewCell.xib in Resources */,
 				7F80B1872436741C000E4C94 /* ForgotPassword.storyboard in Resources */,
+				7F12885024420FF400EA05FF /* ForgotPasswordTableViewCell.xib in Resources */,
 				7F5546442427567E005C669C /* HomePage.storyboard in Resources */,
 				7F0D5DD72415038F0091E1AB /* Authorization.storyboard in Resources */,
 				7F3E3B1B243A4C3D00E8AA75 /* GradientButtonTableViewCell.xib in Resources */,
 				7F0D5CD9240B0B510091E1AB /* Assets.xcassets in Resources */,
 				7F554679242BBC17005C669C /* MyAccount.storyboard in Resources */,
-				7F80B1A024368F58000E4C94 /* UnderlineTextTableViewCell.xib in Resources */,
 				7F546A162415802B00CE0FAC /* Onboarding.storyboard in Resources */,
 				7F65ECCD2434EAEA00F9FE36 /* SignIn.storyboard in Resources */,
 				7FA04B1E243CF49B00DCAF9B /* SignInServiceTableViewCell.xib in Resources */,
@@ -1105,9 +1102,7 @@
 				7F0D5D63240BB0DC0091E1AB /* WeatherRequest.swift in Sources */,
 				7F1088AC2426D78600BAAABF /* AuthFlowFactory.swift in Sources */,
 				7F55464A242756CB005C669C /* HomeFlowFactory.swift in Sources */,
-				7FA04B19243CE1AF00DCAF9B /* UnderlineTextTableViewCellDelegate.swift in Sources */,
 				7F554648242756AC005C669C /* HomeFlowCoordinatorOutput.swift in Sources */,
-				7F37BE6624410F1800CE1EF5 /* ForgotPasswordTableViewCellDelegate.swift in Sources */,
 				7F554673242BB934005C669C /* AccountFlowCoordinator.swift in Sources */,
 				7FF96F392426A136001020FC /* UIViewControllerUIViewExtensions.swift in Sources */,
 				7FF96F2C24269FFA001020FC /* DeepLinkOption.swift in Sources */,
@@ -1117,10 +1112,11 @@
 				7FA04B20243CFE2A00DCAF9B /* SignInServiceTableViewCellDelegate.swift in Sources */,
 				7FF96FA42426C130001020FC /* OnboardingFlowCoordinator.swift in Sources */,
 				7F554663242BB528005C669C /* MyAccountAssembly.swift in Sources */,
-				7FF96F3A2426A136001020FC /* UIViewUIViewExtensions.swift in Sources */,
+				7FF96F3A2426A136001020FC /* UIViewExtensions.swift in Sources */,
 				7F80B19124367775000E4C94 /* SignUpView.swift in Sources */,
 				7FF96F992426C130001020FC /* AuthFlowCoordinatorOutput.swift in Sources */,
 				7FF96FBD2426C851001020FC /* StepViewController.swift in Sources */,
+				7F12885224420FF400EA05FF /* UnderlineTextTableViewCell.swift in Sources */,
 				7F80B18B243676A4000E4C94 /* SignUpPresenter.swift in Sources */,
 				7FF96F3B2426A136001020FC /* NSObjectExtensions.swift in Sources */,
 				7F5546592427BB59005C669C /* MainNewsViewController.swift in Sources */,
@@ -1132,15 +1128,14 @@
 				7F80B18324366CB9000E4C94 /* SignInView.swift in Sources */,
 				7FA04B16243C75D700DCAF9B /* TitleLabelTableViewCell.swift in Sources */,
 				7F80B18524366CC7000E4C94 /* SignInViewController.swift in Sources */,
+				7F12885124420FF400EA05FF /* UnderlineTextTableViewCellDelegate.swift in Sources */,
 				7F55464224275496005C669C /* HomePageViewController.swift in Sources */,
 				7FF96FB62426C147001020FC /* StoryboardsEnum.swift in Sources */,
 				7F55466F242BB680005C669C /* AccountFlowFactory.swift in Sources */,
-				7F37BE6324410F0200CE1EF5 /* ForgotPasswordTableViewCell.swift in Sources */,
 				7F55464D242756DC005C669C /* HomeFlowFactoryImp.swift in Sources */,
 				7F5546462427569D005C669C /* HomeFlowCoordinator.swift in Sources */,
 				7FF96FAC2426C130001020FC /* TabbarController.swift in Sources */,
 				7F80B196243678AD000E4C94 /* ForgotPasswordViewController.swift in Sources */,
-				7F3E3B0D24376F9200E8AA75 /* UIButtonExtensions.swift in Sources */,
 				7FF96FA52426C130001020FC /* OnboardingFlowCoordinatorOutput.swift in Sources */,
 				7FF96F332426A0DB001020FC /* RouterImp.swift in Sources */,
 				7F55463E24275479005C669C /* HomePagePresenterState.swift in Sources */,
@@ -1168,6 +1163,7 @@
 				7F238B3624411F5C00EA55D7 /* BaseView.swift in Sources */,
 				7FF96F2524269F84001020FC /* ApplicationCoordinator.swift in Sources */,
 				7F0D5D62240BB0DC0091E1AB /* WeatherResponce.swift in Sources */,
+				7F12884E24420FF400EA05FF /* ForgotPasswordTableViewCellDelegate.swift in Sources */,
 				7F65ECCF2435016F00F9FE36 /* IBDesignableUIViewExtensions.swift in Sources */,
 				7FA04B1D243CF49B00DCAF9B /* SignInServiceTableViewCell.swift in Sources */,
 				7F554667242BB596005C669C /* MyAccountPresenter.swift in Sources */,
@@ -1180,6 +1176,7 @@
 				7F55465F242BB33D005C669C /* NewsFlowFactory.swift in Sources */,
 				7F55466B242BB607005C669C /* MyAccountView.swift in Sources */,
 				7FF96FBE2426C852001020FC /* PageViewController.swift in Sources */,
+				7F12884F24420FF400EA05FF /* ForgotPasswordTableViewCell.swift in Sources */,
 				7F3E3B1A243A4C3D00E8AA75 /* GradientButtonTableViewCell.swift in Sources */,
 				7F546A0E24157ED300CE0FAC /* OnboardingPresenterImp.swift in Sources */,
 				7FF96F982426C130001020FC /* AuthFlowCoordinator.swift in Sources */,
@@ -1192,7 +1189,6 @@
 				7F3E3B1E243A4E4200E8AA75 /* GradientButtonTableViewCellDelegate.swift in Sources */,
 				7F554675242BB96F005C669C /* AccountFlowCoordinatorOutput.swift in Sources */,
 				7F0D5DCF241503030091E1AB /* AuthorizationView.swift in Sources */,
-				7F80B19F24368F58000E4C94 /* UnderlineTextTableViewCell.swift in Sources */,
 				7F80B18D243676B4000E4C94 /* SignUpPresenterState.swift in Sources */,
 				7F55464024275489005C669C /* HomePageView.swift in Sources */,
 				7F55464F2427BB01005C669C /* MainNewsAssembly.swift in Sources */,

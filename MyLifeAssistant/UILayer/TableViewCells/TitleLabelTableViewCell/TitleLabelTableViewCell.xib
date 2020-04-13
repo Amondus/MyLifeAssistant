@@ -9,35 +9,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TitleLabelTableViewCell" rowHeight="136" id="KGk-i7-Jjw" customClass="TitleLabelTableViewCell" customModule="MyLifeAssistant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TitleLabelTableViewCell" rowHeight="239" id="KGk-i7-Jjw" customClass="TitleLabelTableViewCell" customModule="MyLifeAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="183"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <rect key="frame" x="0.0" y="0.0" width="365" height="183"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-I2-rPA">
-                        <rect key="frame" x="36" y="22" width="248" height="36"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="OVJ-FG-MXw">
+                        <rect key="frame" x="30" y="37" width="305" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="36" id="BbI-rF-t0p"/>
+                            <constraint firstAttribute="height" constant="50" id="Kj3-YT-zN0"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.0" green="0.81568627449999997" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-I2-rPA">
+                        <rect key="frame" x="29" y="136" width="307" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="dN4-Vy-TUQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="BPB-I2-rPA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="47K-0T-Yn7"/>
-                    <constraint firstItem="BPB-I2-rPA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="BTX-Jx-hqh"/>
-                    <constraint firstAttribute="trailing" secondItem="BPB-I2-rPA" secondAttribute="trailing" constant="36" id="E0o-zX-DvQ"/>
-                    <constraint firstAttribute="bottom" secondItem="BPB-I2-rPA" secondAttribute="bottom" constant="22" id="eXf-m5-Q4O"/>
+                    <constraint firstItem="BPB-I2-rPA" firstAttribute="top" secondItem="OVJ-FG-MXw" secondAttribute="bottom" constant="49" id="2dq-1n-bMV"/>
+                    <constraint firstItem="OVJ-FG-MXw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="7K9-gd-TMx"/>
+                    <constraint firstItem="OVJ-FG-MXw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="LzL-wj-KHt"/>
+                    <constraint firstAttribute="right" secondItem="BPB-I2-rPA" secondAttribute="right" constant="29" id="T78-Ld-BTl"/>
+                    <constraint firstAttribute="bottom" secondItem="BPB-I2-rPA" secondAttribute="bottom" constant="11" id="fov-7r-j6W"/>
+                    <constraint firstAttribute="trailing" secondItem="OVJ-FG-MXw" secondAttribute="trailing" constant="30" id="hDF-XO-ih6"/>
+                    <constraint firstItem="BPB-I2-rPA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="hDR-4U-uT7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="mainLabel" destination="BPB-I2-rPA" id="XMy-8V-qfT"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+            <point key="canvasLocation" x="131.15942028985509" y="81.361607142857139"/>
         </tableViewCell>
     </objects>
 </document>

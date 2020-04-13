@@ -10,4 +10,6 @@ import Foundation
 
 protocol SignInServiceTableViewCellDelegate: class {
     var onButtonTapped: (() -> Void)?          {get set}
+    
+    var onGoogleButtonTapped: (() -> Void)?     {get set}
 }

@@ -29,7 +29,10 @@ class SignInViewController: UIViewController, SignInView {
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.delegate = self
         tableView.dataSource = self
+        tableView.delegate = self
+        tableView.backgroundColor = .clear
         hideKeyboardWhenTappedAround()
+        self.view.applyGradient(colors: [#colorLiteral(red: 0.1720973253, green: 0.4694767594, blue: 0.5657689571, alpha: 1), #colorLiteral(red: 0.1755579114, green: 0.1943700016, blue: 0.2773140669, alpha: 1)])
         
         tableView.register(UINib(nibName: "TitleLabelTableViewCell", bundle: nil), forCellReuseIdentifier: "TitleLabelTableViewCell")
         tableView.register(UINib(nibName: "UnderlineTextTableViewCell", bundle: nil), forCellReuseIdentifier: "UnderlineTextTableViewCell")
@@ -43,14 +46,14 @@ class SignInViewController: UIViewController, SignInView {
 extension SignInViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
             let labelCell = tableView.dequeueReusableCell(withIdentifier: "TitleLabelTableViewCell", for: indexPath) as! TitleLabelTableViewCell
-            labelCell.configureCell(title: "Вход")
+            labelCell.configureCell(title: "Войдите в свой аккаунт")
             return labelCell
         case 1:
             let underlineCell = tableView.dequeueReusableCell(withIdentifier: "UnderlineTextTableViewCell", for: indexPath) as! UnderlineTextTableViewCell
@@ -80,28 +83,24 @@ extension SignInViewController: UITableViewDataSource {
                 self.presenter?.signInUser()
             }
             return gradientButtonCell
-        case 5:
-            let serviceButtonCell = tableView.dequeueReusableCell(withIdentifier: "SignInServiceTableViewCell", for: indexPath) as! SignInServiceTableViewCell
-            serviceButtonCell.configureCell(title: "Sign in with Google", image: UIImage(named: "googleLogo"), backgroundColor: .red)
-            serviceButtonCell.onButtonTapped = {
-                GIDSignIn.sharedInstance()?.signIn()
-            }
-            return serviceButtonCell
-        case 6:
-            let serviceButtonCell = tableView.dequeueReusableCell(withIdentifier: "SignInServiceTableViewCell", for: indexPath) as! SignInServiceTableViewCell
-            serviceButtonCell.configureCell(title: "Sign in with Facebook", image: UIImage(named: "facebookLogo"), backgroundColor: .blue)
-            serviceButtonCell.onButtonTapped = {
-                
-            }
-            return serviceButtonCell
         default:
             let serviceButtonCell = tableView.dequeueReusableCell(withIdentifier: "SignInServiceTableViewCell", for: indexPath) as! SignInServiceTableViewCell
-            serviceButtonCell.configureCell(title: "Sign in with Apple", image: UIImage(named: "appleLogo"), backgroundColor: .black)
-            serviceButtonCell.onButtonTapped = {
+            
+            serviceButtonCell.onGoogleButtonTapped = {
+                GIDSignIn.sharedInstance()?.signIn()
+            }
+            
+            serviceButtonCell.onFacebookButtonTapped = {
                 
             }
             return serviceButtonCell
         }
+    }
+}
+
+extension SignInViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = .clear
     }
 }
 

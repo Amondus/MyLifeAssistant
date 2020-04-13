@@ -43,7 +43,7 @@
                                     <action selector="signUpTapped:" destination="VBO-rZ-qCa" eventType="touchUpInside" id="VT2-GI-Eff"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control your. Allergy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="MJM-cM-2bd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control your. Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="MJM-cM-2bd">
                                 <rect key="frame" x="54" y="94" width="306" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Yo1-v2-9Rp"/>
@@ -91,8 +91,8 @@
                         <viewLayoutGuide key="safeArea" id="TIW-V8-V4N"/>
                     </view>
                     <connections>
-                        <outlet property="allergyLabel" destination="MJM-cM-2bd" id="SnV-5P-y5u"/>
                         <outlet property="gradientButton" destination="u8w-Ge-uus" id="A3f-Od-3F3"/>
+                        <outlet property="lifeLabel" destination="MJM-cM-2bd" id="F03-PO-Ppv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lrk-ye-e8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

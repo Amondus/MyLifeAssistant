@@ -10,10 +10,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UnderlineTextTableViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="UnderlineTextTableViewCell" customModule="MyLifeAssistant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEk-7E-PcM">
@@ -47,11 +47,11 @@
                     <constraint firstItem="cEk-7E-PcM" firstAttribute="top" secondItem="pbs-rP-fv7" secondAttribute="bottom" constant="2" id="6Cy-bf-VNs"/>
                     <constraint firstAttribute="trailing" secondItem="pbs-rP-fv7" secondAttribute="trailing" constant="16" id="7jH-ms-IS3"/>
                     <constraint firstItem="OUD-UX-a8T" firstAttribute="top" secondItem="pbs-rP-fv7" secondAttribute="bottom" constant="7" id="Cpv-yl-8gI"/>
-                    <constraint firstAttribute="bottom" secondItem="cEk-7E-PcM" secondAttribute="bottom" constant="9" id="MNi-K2-ahX"/>
                     <constraint firstItem="pbs-rP-fv7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Omb-fU-Tls"/>
                     <constraint firstItem="cEk-7E-PcM" firstAttribute="leading" secondItem="OUD-UX-a8T" secondAttribute="trailing" constant="8" id="Vq9-hq-x1v"/>
                     <constraint firstItem="pbs-rP-fv7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="hxE-6Y-9yW"/>
-                    <constraint firstAttribute="bottom" secondItem="OUD-UX-a8T" secondAttribute="bottom" constant="13" id="wJZ-nj-yVk"/>
+                    <constraint firstAttribute="bottom" secondItem="OUD-UX-a8T" secondAttribute="bottom" constant="15" id="oDN-6q-vYr"/>
+                    <constraint firstAttribute="bottom" secondItem="cEk-7E-PcM" secondAttribute="bottom" constant="11" id="sSs-7Z-1Lf"/>
                     <constraint firstAttribute="trailing" secondItem="cEk-7E-PcM" secondAttribute="trailing" constant="16" id="wzo-sU-4OR"/>
                 </constraints>
             </tableViewCellContentView>

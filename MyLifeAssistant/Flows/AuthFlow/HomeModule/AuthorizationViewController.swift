@@ -10,7 +10,7 @@ import UIKit
 
 class AuthorizationViewController: UIViewController, AuthorizationView {
     
-    @IBOutlet weak var allergyLabel: UILabel!
+    @IBOutlet weak var lifeLabel: UILabel!
     @IBOutlet weak var gradientButton: UIButton!
     
     var onSignIn: (() -> Void)?
@@ -20,7 +20,7 @@ class AuthorizationViewController: UIViewController, AuthorizationView {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        setAllergyLabel()
+        setLifeLabel()
     }
     
     override func viewWillLayoutSubviews() {
@@ -42,14 +42,14 @@ class AuthorizationViewController: UIViewController, AuthorizationView {
         self.navigationController?.view.backgroundColor = .clear
     }
     
-    func setAllergyLabel() {
+    func setLifeLabel() {
         let text = NSMutableAttributedString()
         text.append(NSAttributedString(string: "Control your.  ",
                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]))
-        text.append(NSAttributedString(string: "Allergy.",
+        text.append(NSAttributedString(string: "Life.",
                                        attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0.8156862745, blue: 0.631372549, alpha: 1),
-                                                    NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: allergyLabel.font.pointSize)]))
-        allergyLabel.attributedText = text
+                                                    NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: lifeLabel.font.pointSize)]))
+        lifeLabel.attributedText = text
     }
     
     func createGradientLayer() {

@@ -41,12 +41,13 @@ final class SignInPresenterImp {
 extension SignInPresenterImp: SignInPresenter {
     
     func signInUser() {
-        
         if validateFields() == true {
+            
+            view?.customActivityIndicator(startAnimate: true)
             let email = state?.email ?? ""
             let password = state?.password ?? ""
             Auth.auth().signIn(withEmail: email, password: password) { result, error in
-                
+                self.view?.customActivityIndicator(startAnimate: false)
                 if error != nil {
                     self.view?.presentAlert(title: "Ошибка",
                                             message: String("Введен неправильный логин или пароль."),
@@ -54,7 +55,7 @@ extension SignInPresenterImp: SignInPresenter {
                                             style: .alert)
                 }
                 else {
-                    self.view?.onFinishSignIn!()
+                    self.view?.onFinishSignIn?()
                 }
             }
         }
